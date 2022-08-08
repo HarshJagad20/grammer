@@ -1,0 +1,39 @@
+{
+  "name": "harsh/grammer",
+  "description": "it is a grammer based package which helps to get random verbs, nouns & adjectives",
+  "type": "project",
+  "authors": [
+    {
+      "name": "harsh jagad",
+      "email": "harshjagad20@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "guzzlehttp/guzzle": "^7.0.1",
+    "illuminate/support": "^8.0|^9.0",
+    "illuminate/contracts": "^8.0|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Harsh\\Grammer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Harsh\\Grammer\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Harsh\\Grammer\\GrammerServiceProvider"
+      ],
+      "aliases": {
+        "GrammerFacade": "Harsh\\Grammer\\Facades\\GrammerFacade"
+      }
+    }
+  }
+}
