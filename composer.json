@@ -1,5 +1,5 @@
 {
-  "name": "harsh/grammer",
+  "name": "harsh/word-generator",
   "description": "it is a grammer based package which helps to get random verbs, nouns & adjectives",
   "type": "project",
   "authors": [
@@ -18,21 +18,21 @@
   },
   "autoload": {
     "psr-4": {
-      "Harsh\\Grammer\\": "src/"
+      "Harsh\\WordGenerator\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Harsh\\Grammer\\": "src/"
+      "Harsh\\WordGenerator\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Harsh\\Grammer\\GrammerServiceProvider"
+        "Harsh\\WordGenerator\\WordGeneratorProvider"
       ],
       "aliases": {
-        "GrammerFacade": "Harsh\\Grammer\\Facades\\GrammerFacade"
+        "WordGeneratorFacade": "Harsh\\WordGenerator\\Facades\\WordGeneratorFacade"
       }
     }
   }
