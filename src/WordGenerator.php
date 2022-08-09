@@ -6,7 +6,7 @@ use Illuminate\Support\Arr;
 
 class WordGenerator
 {
-    public function all($count = null)
+    public static function all($count = null)
     {
         $count = $count ?? 5;
 
@@ -19,7 +19,7 @@ class WordGenerator
         ];
     }
 
-    public function nouns($count = null)
+    public static function nouns($count = null)
     {
         $count = $count ?? 5;
 
@@ -29,7 +29,7 @@ class WordGenerator
         return ['nouns'=>$response];
     }
 
-    public function verbs($count = null)
+    public static function verbs($count = null)
     {
         $count = $count ?? 5;
 
@@ -39,7 +39,7 @@ class WordGenerator
         return ['verbs'=>$response];
     }
 
-    public function adjectives($count = null)
+    public static function adjectives($count = null)
     {
         $count = $count ?? 5;
 

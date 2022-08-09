@@ -14,16 +14,19 @@
   "require": {
     "guzzlehttp/guzzle": "^7.0.1",
     "illuminate/support": "^8.0|^9.0",
-    "illuminate/contracts": "^8.0|^9.0"
+    "illuminate/contracts": "^8.0|^9.0",
+    "phpunit/phpunit": "^9.5"
   },
   "autoload": {
     "psr-4": {
-      "Harsh\\WordGenerator\\": "src/"
+      "Harsh\\WordGenerator\\": "src/",
+      "Harsh\\WordGenerator\\Test\\": "tests/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Harsh\\WordGenerator\\": "src/"
+      "Harsh\\WordGenerator\\": "src/",
+      "Harsh\\WordGenerator\\Test\\": "tests/"
     }
   },
   "extra": {
@@ -34,6 +37,15 @@
       "aliases": {
         "WordGeneratorFacade": "Harsh\\WordGenerator\\Facades\\WordGeneratorFacade"
       }
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.21",
+    "pestphp/pest-plugin-laravel": "^1.2"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
     }
   }
 }
