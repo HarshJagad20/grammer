@@ -11,23 +11,21 @@
   "license": "MIT",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "require": {
-    "guzzlehttp/guzzle": "^7.0.1",
-    "illuminate/support": "^8.0|^9.0",
-    "illuminate/contracts": "^8.0|^9.0",
-    "phpunit/phpunit": "^9.5"
-  },
   "autoload": {
     "psr-4": {
-      "Harsh\\WordGenerator\\": "src/",
-      "Harsh\\WordGenerator\\Test\\": "tests/"
+      "Harsh\\WordGenerator\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
       "Harsh\\WordGenerator\\": "src/",
-      "Harsh\\WordGenerator\\Test\\": "tests/"
+      "Harsh\\WordGenerator\\Tests\\": "tests"
     }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit",
+    "pest": "./vendor/bin/pest",
+    "test-f": "vendor/bin/phpunit --filter"
   },
   "extra": {
     "laravel": {
@@ -40,12 +38,15 @@
     }
   },
   "require-dev": {
+    "orchestra/testbench": "^6.0",
+    "phpunit/phpunit": "^9.5",
     "pestphp/pest": "^1.21",
     "pestphp/pest-plugin-laravel": "^1.2"
   },
   "config": {
     "allow-plugins": {
-      "pestphp/pest-plugin": true
+      "pestphp/pest-plugin": true,
+      "kylekatarnls/update-helper": false
     }
   }
 }

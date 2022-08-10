@@ -11,7 +11,9 @@
 |
 */
 
-// uses(tests\TestCase::class)->in('Feature');
+use Harsh\WordGenerator\Tests\TestCase;
+
+uses(TestCase::class)->in('Feature');
 
 /*
 |--------------------------------------------------------------------------
